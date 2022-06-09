@@ -9,11 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
-  //users: User[] = [];
+  users: User[] = [];
   displayedColumns = ['id', 'name', 'email'];
   constructor(private userService: UserService) { }
 
   ngOnInit(): void {
+    this.userService.list().subscribe(users => {
+      this.users = users
+    })
   }    
 
   createProduct(): void {
