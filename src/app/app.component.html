@@ -1,26 +1,2 @@
 
-<a href="#" class="bi bi-plus-circle text-success fs-1"></a>
-<table class="table table-striped">
-  <thead>
-  <tr>
-    <th scope="col">id</th>
-    <th scope="col">Nome</th>
-    <th scope="col">Email</th>
-    <th scope="col">Ações</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let user of users">
-    <th scope="row">{{ user.id }}</th>
-    <td>
-      {{ user.name }}
-    </td>
-    <td>    {{user.email}}  
-    </td>
-    <td>
-      <a href="#" class="bi bi-pen text-primary fs-1"></a>
-      <a href="#" class="bi bi-trash text-danger fs-1"></a>
-    </td>
-  </tr>
-  </tbody>
-</table>
+<app-user></app-user>
